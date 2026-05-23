@@ -1,0 +1,6 @@
+{
+  "name": "Praveen Yadav Portfolio",
+  "description": "Official portfolio website of Praveen Yadav, a Class 12 student from Lucknow, India building web products, student tools, AI-powered product ideas, 3D experiments, and research writing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

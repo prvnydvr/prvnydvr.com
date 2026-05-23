@@ -94,10 +94,16 @@ Create a production build:
 npm run build
 ```
 
-Run TypeScript checks:
+Run lint checks:
 
 ```bash
 npm run lint
+```
+
+Run TypeScript checks:
+
+```bash
+npm run typecheck
 ```
 
 ## Deployment

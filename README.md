@@ -2,7 +2,7 @@
 
 A minimal, admissions-ready portfolio for Praveen Yadav ([@prvnydvr](https://github.com/prvnydvr)), showcasing projects, writing, 3D work, technical experiments, and resume timeline.
 
-Website: [https://prvnydvr.com](https://prvnydvr.me)  
+Website: [https://prvnydvr.me](https://prvnydvr.me)  
 Repository: [https://github.com/prvnydvr/prvnydvr.com](https://github.com/prvnydvr/prvnydvr.com)
 
 ## Overview

@@ -20,10 +20,11 @@ export default function BlogCard({ post, onSelectBlog }: BlogCardProps) {
           <span className="text-xs font-mono font-semibold text-neutral-400 uppercase tracking-widest">
             {post.category}
           </span>
-          <span className="text-neutral-300">•</span>
-          <span className="text-xs font-mono text-neutral-400">
-            {post.readingTime}
-          </span>
+          {post.readingTime ? (
+            <span className="text-xs font-mono text-neutral-400">
+              {post.readingTime}
+            </span>
+          ) : null}
         </div>
         <span className="text-xs font-mono text-neutral-400 md:text-right">
           {post.date}

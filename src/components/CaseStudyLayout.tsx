@@ -26,7 +26,7 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
           <ArrowLeft className="w-4.5 h-4.5" />
           <span>Back to Projects</span>
         </a>
-        <span>/</span>
+        <span>:</span>
         <span className="text-neutral-800 font-medium">{project.title}</span>
       </nav>
 
@@ -46,8 +46,8 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
           </span>
         </div>
 
-        <p className="text-lg md:text-xl font-serif italic text-neutral-650 text-neutral-600 border-l-2 border-neutral-300 pl-4 py-1">
-          "{project.shortDescription}"
+        <p className="text-lg md:text-xl text-neutral-650 text-neutral-600 border-l-2 border-neutral-300 pl-4 py-1">
+          {project.shortDescription}
         </p>
 
         {/* Project Meta Metrics List */}
@@ -125,13 +125,13 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
             <div className="w-96 h-96 border border-neutral-300/30 rounded-full flex items-center justify-center pointer-events-none">
               <div className="w-72 h-72 border border-dashed border-neutral-400/25 rounded-full flex items-center justify-center">
                 <div className="w-48 h-48 border border-neutral-500/20 rounded-sm flex items-center justify-center rotate-12">
-                  <span className="text-xs font-mono text-neutral-400 tracking-wider">PROJECT BLUEPRINT</span>
+                  <span className="text-xs font-mono text-neutral-400 tracking-wider">Project details</span>
                 </div>
               </div>
             </div>
 
             <div className="absolute top-4 left-4 text-xs font-mono text-neutral-500 bg-white/80 border border-[#E5E5E5] px-2.5 py-0.5 rounded-sm">
-              SCHEMATIC: CS PORTFOLIO OUTLINE
+              Project outline
             </div>
           </>
         )}
@@ -143,7 +143,7 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
         <div className="md:col-span-4 space-y-6">
           
           <div className="border border-neutral-200 bg-white rounded-sm p-5 space-y-4">
-            <h3 className="font-serif font-bold text-base text-neutral-800">Technical Context</h3>
+            <h3 className="font-serif font-bold text-base text-neutral-800">Technical Notes</h3>
             
             <div className="space-y-4">
               <div>
@@ -160,7 +160,7 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
               <div>
                 <span className="font-mono text-[10px] text-neutral-400 block uppercase">Objective</span>
                 <p className="text-xs text-neutral-600 mt-1 leading-relaxed">
-                  Solve real high-school constraints via rapid, zero-bloat client engineering, maintaining high UX transparency.
+                  Solve real high school constraints with simple client side engineering and clear user flows.
                 </p>
               </div>
 
@@ -169,7 +169,7 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
                 <ul className="text-xs text-neutral-600 mt-1 space-y-1 list-disc list-inside">
                   <li>Performance under constraints</li>
                   <li>Security guidelines</li>
-                  <li>Human-centric layout flow</li>
+                  <li>Human centered layout flow</li>
                 </ul>
               </div>
             </div>
@@ -177,8 +177,8 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
 
           <div className="border border-neutral-200 bg-neutral-50 rounded-sm p-5 space-y-3">
             <h4 className="text-xs font-mono font-semibold tracking-wider text-neutral-400 uppercase">Reviewer Note</h4>
-            <p className="text-xs text-neutral-600 leading-relaxed italic">
-              "This project showcases honest documentation. All technical trade-offs have been recorded objectively, highlighting real-world hurdles faced during the drafting process."
+            <p className="text-xs text-neutral-600 leading-relaxed">
+              This project keeps the public notes honest and focused on real build decisions.
             </p>
           </div>
 
@@ -251,7 +251,7 @@ export default function CaseStudyLayout({ project, relatedProjects = [], onBack,
           }}
           className="inline-flex items-center gap-1 text-xs font-mono py-2 px-4 text-neutral-800 hover:text-black border-b border-neutral-400 hover:border-black transition-colors cursor-pointer"
         >
-          <span>{"Read My Architectural Journal ->"}</span>
+          <span>Read Journal</span>
         </a>
       </footer>
       

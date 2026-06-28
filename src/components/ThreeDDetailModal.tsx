@@ -48,18 +48,18 @@ export default function ThreeDDetailModal({ item, onClose }: ThreeDDetailModalPr
 
               <div className="absolute bottom-4 left-4 right-4 text-center z-10 bg-white/70 backdrop-blur-xs py-2 px-3 rounded-xs border border-white/60">
                 <span className="text-[10px] font-mono text-neutral-600 font-medium tracking-wide">
-                  COMPILATION RENDER: SUCCESS
+                  Render preview
                 </span>
               </div>
             </div>
 
             {/* Spec Sheet Table */}
             <div className="border border-[#E5E5E5] rounded-sm p-4 bg-[#FAFAF7] space-y-3">
-              <h5 className="text-[10px] font-mono font-bold tracking-wider text-neutral-400 uppercase">System Metadata</h5>
+              <h5 className="text-[10px] font-mono font-bold tracking-wider text-neutral-400 uppercase">Details</h5>
               <div className="space-y-1.5 text-xs">
                 <div className="flex justify-between border-b border-[#E5E5E5]/50 pb-1">
                   <span className="text-neutral-500 font-mono">RENDER ENGINE</span>
-                  <span className="text-neutral-800 font-mono font-medium">Cycles (Spectral Paths)</span>
+                  <span className="text-neutral-800 font-mono font-medium">Cycles</span>
                 </div>
                 <div className="flex justify-between border-b border-[#E5E5E5]/50 pb-1">
                   <span className="text-neutral-500 font-mono">LIGHT BOUNCES</span>
@@ -88,7 +88,7 @@ export default function ThreeDDetailModal({ item, onClose }: ThreeDDetailModalPr
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Compass className="w-4 h-4 text-neutral-500" />
-                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-400 uppercase">The Concept</h4>
+                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-400 uppercase">Concept</h4>
               </div>
               <p className="text-sm text-neutral-700 leading-relaxed font-sans">
                 {item.description}
@@ -99,7 +99,7 @@ export default function ThreeDDetailModal({ item, onClose }: ThreeDDetailModalPr
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <PenTool className="w-4 h-4 text-neutral-500" />
-                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-400 uppercase">The Modeling Blueprint</h4>
+                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-400 uppercase">Process</h4>
               </div>
               <p className="text-sm text-neutral-600 leading-relaxed font-sans">
                 {item.process}
@@ -110,10 +110,10 @@ export default function ThreeDDetailModal({ item, onClose }: ThreeDDetailModalPr
             <div className="space-y-2 border-l-2 border-neutral-700 pl-4 py-1 bg-neutral-50 rounded-r-sm pr-3">
               <div className="flex items-center gap-2 mb-1">
                 <Lightbulb className="w-4 h-4 text-neutral-700" />
-                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-600 uppercase">Core Insight & Academic Takeaway</h4>
+                <h4 className="text-xs font-mono font-bold tracking-wider text-neutral-600 uppercase">Learning</h4>
               </div>
-              <p className="text-sm text-neutral-700 leading-relaxed italic font-serif">
-                "{item.learning}"
+              <p className="text-sm text-neutral-700 leading-relaxed">
+                {item.learning}
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export default function ThreeDDetailModal({ item, onClose }: ThreeDDetailModalPr
             onClick={onClose}
             className="px-4 py-2 text-xs font-mono text-neutral-700 hover:text-neutral-900 hover:bg-neutral-150 rounded-sm border border-[#E5E5E5] transition-colors cursor-pointer"
           >
-            Close Viewport
+            Close
           </button>
         </div>
       </div>

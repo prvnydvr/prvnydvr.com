@@ -14,14 +14,18 @@ export default function ProjectCard({ project, onSelectCaseStudy }: ProjectCardP
   const statusColors: Record<string, string> = {
     'Live': 'bg-emerald-50 text-emerald-800 border-emerald-200',
     'Live / Built': 'bg-emerald-50 text-emerald-800 border-emerald-200',
+    'Live and Built': 'bg-emerald-50 text-emerald-800 border-emerald-200',
     'In Progress': 'bg-[#FFFBEB] text-[#B45309] border-[#FDE68A]',
     'In progress': 'bg-[#FFFBEB] text-[#B45309] border-[#FDE68A]',
     'Prototype': 'bg-gray-150 text-gray-800 border-gray-300',
     'Built / Prototype': 'bg-gray-150 text-gray-800 border-gray-300',
+    'Built Prototype': 'bg-gray-150 text-gray-800 border-gray-300',
     'Selected for Use': 'bg-indigo-50 text-indigo-800 border-indigo-200',
     'Built / Institutional project': 'bg-indigo-50 text-indigo-800 border-indigo-200',
+    'Built, Institutional project': 'bg-indigo-50 text-indigo-800 border-indigo-200',
     'Concept': 'bg-rose-50 text-rose-800 border-rose-200',
     'Concept / In progress': 'bg-rose-50 text-rose-800 border-rose-200',
+    'Concept in progress': 'bg-rose-50 text-rose-800 border-rose-200',
     'Ongoing': 'bg-sky-50 text-sky-800 border-sky-200'
   };
 
@@ -81,8 +85,8 @@ export default function ProjectCard({ project, onSelectCaseStudy }: ProjectCardP
             </span>
           </div>
 
-          <p className="text-sm font-serif italic text-neutral-700 leading-relaxed">
-            "{project.shortDescription}"
+          <p className="text-sm text-neutral-700 leading-relaxed">
+            {project.shortDescription}
           </p>
 
           <hr className="border-[#E5E5E5]/50" />
@@ -90,7 +94,7 @@ export default function ProjectCard({ project, onSelectCaseStudy }: ProjectCardP
           {/* Structured Case Brief: Problem & Role */}
           <div className="space-y-3 text-xs leading-relaxed">
             <div>
-              <span className="font-mono text-[10px] text-neutral-400 block uppercase font-medium tracking-wide">The Challenge / Problem</span>
+              <span className="font-mono text-[10px] text-neutral-400 block uppercase font-medium tracking-wide">Problem</span>
               <p className="text-neutral-600 mt-0.5 line-clamp-3">
                 {project.problem}
               </p>

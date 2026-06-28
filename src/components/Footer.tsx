@@ -21,7 +21,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <span className="font-serif font-semibold text-neutral-800 tracking-tight text-base">{PERSONAL_INFO.name}</span>
           </div>
           <p className="text-sm text-neutral-500 leading-relaxed font-sans">
-            Student builder based in {PERSONAL_INFO.cityShort}. Documenting web products, student tools, AI-powered product ideas, 3D experiments, and research writing.
+            Student builder based in {PERSONAL_INFO.cityShort}. Documenting web products, student tools, AI product ideas, 3D experiments, and research writing.
           </p>
           <div className="pt-2 text-xs font-mono text-neutral-400">
             © 2026 {PERSONAL_INFO.name}. Built with React and Tailwind CSS.
@@ -115,8 +115,8 @@ export default function Footer({ onNavigate }: FooterProps) {
       </div>
 
       <div className="max-w-5xl mx-auto mt-12 pt-8 border-t border-[#E5E5E5]/40 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <span className="text-sm font-serif italic text-neutral-500">
-          “Learning by building.”
+        <span className="text-sm text-neutral-500">
+          Learning by building
         </span>
         <button
           onClick={scrollValueToTop}
